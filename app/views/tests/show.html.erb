@@ -1,8 +1,11 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Image:</strong>
-  <%= @test.image %>
+  <strong>Picture:</strong>
+    
+</p>
+<p>
+  <img src="<%= @test.image %>" class="rounded mx-auto d-block">
 </p>
 
 <%= link_to 'Edit', edit_test_path(@test) %> |
