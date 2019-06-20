@@ -3,13 +3,16 @@
   <h1>Upload Your Picture</h1>
 
   <%= simple_form_for @test do |f| %>
-  <div class="form-inputs">
-    <%= f.input :image %>
-  </div>
+    <div class="form-inputs">
+      <%= f.input :image %>
+    </div>
+    <div class="from-inputs">
+      <%= f.input :name %>
+    </div>
 
-  <div class="form-actions">
-    <%= f.submit "Upload!", class: 'my-btn' %>
-  </div>
+    <div class="form-actions">
+      <%= f.submit "Upload!", class: 'my-btn' %>
+    </div>
   <% end %>
 
   <%= link_to 'Back', tests_path %>

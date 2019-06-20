@@ -3,13 +3,15 @@
   <h1>Update Your Image</h1>
   
   <%= simple_form_for @test do |f| %>
-  <div class="form-inputs">
-    <%= f.input :image %>
-  </div>
-
-  <div class="form-actions">
-    <%= f.submit "Update this Image", class: 'my-btn' %>
-  </div>
+    <div class="form-inputs">
+      <%= f.input :image %>
+    </div>
+    <div class="form-inputs">
+      <%= f.input :name %>
+    </div>
+    <div class="form-actions">
+      <%= f.submit "Update this Image", class: 'my-btn' %>
+    </div>
   <% end %>
   <%= link_to 'Show', @test %>
   <%= link_to 'Back', tests_path %>
