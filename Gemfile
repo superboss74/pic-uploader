@@ -76,4 +76,4 @@ end
 gem 'simple_form'
 
 # Adding CarrierWave
-gem 'carrierwave', '~> 1.0'
+gem 'carrierwave', '~> 1.3'
